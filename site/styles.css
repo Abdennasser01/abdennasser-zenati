@@ -1,13 +1,22 @@
 body {
-    background-color: #401011;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-color: hsl(34, 71%, 74%);
+    background-color: #404;
     color: #fff;
     border: #111111;
     border: 20px;
     text-align: center;
 }
 
-go {
+a {
     padding: 20px;
-    background-color: #845454;
-    color: #183838;
+    color: bisque;
+}
+
+a::after {
+    color: black;
+}
+
+a:hover::after {
+    color: aqua;
 }
