@@ -5,3 +5,9 @@ body {
     border: 20px;
     text-align: center;
 }
+
+go {
+    padding: 20px;
+    background-color: #845454;
+    color: #183838;
+}
