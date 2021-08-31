@@ -1,0 +1,113 @@
+    #nav-bar {
+        float: right;
+        list-style-type: 0;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #logo img {
+        width: 7%;
+        height: 5%;
+    }
+    
+    li {
+        display: inline-block;
+        margin-left: 1.05em;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    html {
+        height: 100%;
+        color: white;
+        background-image: linear-gradient(to top right, #000010 70%, #111111);
+    }
+    
+    li::before {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        transform: scaleX(0);
+        transition: transform 250ms ease;
+    }
+    
+    li:hover::before {
+        transform: scaleX(1);
+    }
+    
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #welcome {
+        position: relative;
+        top: 8em;
+        left: 15em;
+    }
+    
+    #welcome span {
+        font-size: clamp(0.5rem, 1vw + 1rem, 2.5rem);
+        position: absolute;
+        max-height: 1em;
+        transform: translateY(-3rem);
+        opacity: 0;
+        animation: fade-down 1.5s 6s ease-in-out forwards;
+    }
+    
+    #welcome h1 {
+        font-size: clamp(1rem, 2vw + 1rem, 3.5rem);
+        position: absolute;
+        top: 2em;
+        font-weight: 400;
+        font-family: "source code pro", monospace;
+        position: relative;
+    }
+    
+    #welcome h1::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: #000010;
+        left: 0;
+        right: 0;
+        animation: typing 5s 500ms steps(24) forwards;
+    }
+    
+    h1::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 0.115em;
+        background-color: #aa0a55;
+        animation: blink 750ms 500ms steps(24) infinite, typing 5s 500ms steps(24) forwards;
+    }
+    
+    @keyframes typing {
+        to {
+            left: 100%;
+        }
+    }
+    
+    @keyframes blink {
+        to {
+            background: transparent;
+        }
+    }
+    
+    @keyframes fade-down {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
