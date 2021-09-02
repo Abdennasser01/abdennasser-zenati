@@ -50,25 +50,29 @@
     #welcome {
         position: relative;
         top: 8em;
-        left: 20%;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     #welcome span {
-        font-size: clamp(0.5rem, 1vw + 1rem, 2.5rem);
+        font-size: clamp(0.2rem, 1vw + .5rem, 2.5rem);
         position: absolute;
-        max-height: 1em;
         transform: translateY(-3rem);
         opacity: 0;
         animation: fade-down 1.5s 6s ease-in-out forwards;
+        white-space: nowrap;
     }
     
     #welcome h1 {
-        font-size: clamp(1rem, 2vw + 1rem, 3.5rem);
+        font-size: clamp(.6rem, 2vw + 1rem, 4rem);
         position: absolute;
         top: 2em;
         font-weight: 400;
         font-family: "source code pro", monospace;
         position: relative;
+        white-space: nowrap;
     }
     
     #welcome h1::before {
