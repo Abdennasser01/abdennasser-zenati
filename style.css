@@ -1,119 +1,132 @@
-    #nav-bar {
-        float: right;
-        list-style-type: 0;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #logo img {
-        width: 7%;
-        height: 5%;
-    }
-    
-    li {
-        font-size: 13px;
-        display: inline-block;
-        margin-left: 1em;
-    }
-    
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    html {
-        height: 100%;
-        color: white;
-        background-image: linear-gradient(to top right, #000010 70%, #111111);
-    }
-    
-    li::before {
-        display: block;
-        content: '';
-        width: 100%;
-        height: 2px;
-        background-color: #ffffff;
-        transform: scaleX(0);
-        transition: transform 250ms ease;
-    }
-    
-    li:hover::before,
-    li:focus::before {
-        transform: scaleX(1);
-    }
-    
-    div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-    }
-    
-    #welcome {
-        position: relative;
-        top: 8em;
-        left: 0;
-    }
-    
-    #welcome span {
-        font-size: clamp(0.2rem, 1vw + .5rem, 2.5rem);
-        position: absolute;
-        transform: translateY(-3rem);
-        opacity: 0;
-        animation: fade-down 1.5s 6s ease-in-out forwards;
-        white-space: nowrap;
-    }
-    
-    #welcome h1 {
-        font-size: clamp(.6rem, 2vw + 1rem, 4rem);
-        position: absolute;
-        top: 2em;
-        font-weight: 400;
-        font-family: "source code pro", monospace;
-        position: relative;
-        white-space: nowrap;
-    }
-    
-    #welcome h1::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        background-color: #000010;
-        left: 0;
-        right: 0;
-        animation: typing 5s 500ms steps(24) forwards;
-    }
-    
-    h1::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 0.115em;
-        background-color: #aa0a55;
-        animation: blink 750ms 500ms steps(24) infinite, typing 5s 500ms steps(24) forwards;
-    }
-    
-    @keyframes typing {
-        to {
-            left: 100%;
+        #nav-bar {
+            float: right;
+            list-style-type: 0;
+            padding: 0;
+            margin: 0;
         }
-    }
-    
-    @keyframes blink {
-        to {
-            background: transparent;
+        
+        #logo img {
+            width: 7%;
+            height: 5%;
         }
-    }
-    
-    @keyframes fade-down {
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        
+        li {
+            font-size: 13px;
+            display: inline-block;
+            margin-left: 1em;
         }
-    }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        html {
+            height: 100%;
+            color: white;
+            background-image: linear-gradient(to top right, #000010 70%, #111111);
+        }
+        
+        li::before {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: #ffffff;
+            transform: scaleX(0);
+            transition: transform 250ms ease;
+        }
+        
+        li:hover::before,
+        li:focus::before {
+            transform: scaleX(1);
+        }
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        
+        #welcome {
+            position: relative;
+            top: 4em;
+            left: 0;
+        }
+        
+        #welcome span {
+            font-size: clamp(0.2rem, 1vw + .5rem, 2.5rem);
+            position: absolute;
+            transform: translateY(-3rem);
+            opacity: 0;
+            animation: fade-down 1.5s 6s ease-in-out forwards;
+            white-space: nowrap;
+        }
+        
+        #welcome h1 {
+            font-size: clamp(.6rem, 2vw + 1rem, 4rem);
+            position: absolute;
+            top: 1em;
+            font-weight: 400;
+            font-family: "source code pro", monospace;
+            position: relative;
+            white-space: nowrap;
+        }
+        
+        #welcome h1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: #000010;
+            left: 0;
+            right: 0;
+            animation: typing 5s 500ms steps(24) forwards;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 0.115em;
+            background-color: #aa0a55;
+            animation: blink 750ms 500ms steps(24) infinite, typing 5s 500ms steps(24) forwards;
+        }
+        
+        @keyframes typing {
+            to {
+                left: 100%;
+            }
+        }
+        
+        @keyframes blink {
+            to {
+                background: transparent;
+            }
+        }
+        
+        @keyframes fade-down {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        #btns {
+            width: 100%;
+            position: relative;
+            transform: translateX(-20%);
+            top: 4em;
+        }
+        
+        button {
+            width: 20%;
+            margin: 15%;
+            white-space: nowrap;
+        }
