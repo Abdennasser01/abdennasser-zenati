@@ -37,7 +37,8 @@
         transition: transform 250ms ease;
     }
     
-    li:hover::before {
+    li:hover::before,
+    li:focus::before {
         transform: scaleX(1);
     }
     
