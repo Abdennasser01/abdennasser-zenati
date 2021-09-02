@@ -129,4 +129,7 @@
             width: 20%;
             margin: 15%;
             white-space: nowrap;
+            background-color: #33ff55;
+            border-radius: 10%;
+            height: 3em;
         }
