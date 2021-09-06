@@ -24,7 +24,7 @@
         html {
             height: 100%;
             color: white;
-            background-image: linear-gradient(to top right, #000010 70%, #111111);
+            background-color: #000010;
         }
         
         li::before {
@@ -131,7 +131,7 @@
             padding: .5em 2em;
             border: .125em solid #33ff55;
             color: #33ff55;
-            font-weight: 800;
+            font-weight: 1000;
             margin: 15%;
             white-space: nowrap;
             border-radius: 10%;
@@ -176,7 +176,6 @@
         
         #btns a:hover,
         #btns a:focus {
-            border-color: #aa0a55;
             background-color: #33ff55;
             color: #aa0a55;
         }
